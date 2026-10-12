@@ -1,13 +1,13 @@
 {
-  "version": "4.1.0-beta.2",
-  "notes": "# Duou-Switch 4.1.0-beta.2 隔离更新验收\n\n本版本是连续签名更新验收的版本 B，用于验证 A 经真实匿名 HTTPS 下载、minisign 验签、NSIS 覆盖安装和自动重启后运行到 B，保留 SQLite、四客户端配置、主题和窗口。\n本程序只允许有 acceptance.json 标记并带 --duou-acceptance-root 参数的受控环境。普通用户请使用经过审查的正式产品包；stable 尚未批准发布。\n\n合并 CC Switch v4.0.9 兼容修复，同时保留 Duou Save-only、显式启用、CAS、OAuth、OpenCode JSONC 与 Hermes 标量配置保护。\n保留 MIT 许可，源码继续私有。\n",
-  "pub_date": "2026-10-12T08:21:44.772Z",
+  "version": "4.1.0-beta.1",
+  "notes": "# Duou-Switch 4.1.0-beta.1 隔离更新验收\n\n本版本用于 Windows x64 当前用户级 NSIS 的签名更新验收，是版本 A。\n仅用于有 acceptance.json 标记且带 --duou-acceptance-root 参数的受控安装目录，普通启动会拒绝运行。使用独立应用缓存和合成资料，不用于日常配置。\n\n支持从 testing HTTPS 频道检查、下载、验签和安装版本 B；正式 stable 频道尚未批准发布。Duou 4.0.0 首次过渡需要手动覆盖安装。\n\n保留 MIT 许可。公开仓库只提供二进制、签名、哈希和说明，源码继续私有。\n",
+  "pub_date": "2026-10-12T08:15:49.960Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.1.0-beta.2/Duou-Switch_4.1.0-beta.2_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTUxwMzZwa0F1MFprdkF2Q2QvZFUvVzdoZTJ6MzRWZGlYTG5yTTE0dmI4cmN3VkI2WVhRa3Z5dXhBMExhNThyNG0yaTZTZ0U0blh0RVVtZ3NNelVIVndnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzkzMjI2CWZpbGU6RHVvdS1Td2l0Y2hfNC4xLjAtYmV0YS4yX3g2NC1zZXR1cC5leGUKbjNBNG1uWGdjeDdWcTVrYkxVZTdQTUhhVTBId3Juc01IdnJ1VmxxeTFTUUhjK21XMWZJSkJxNlRZUmZGV2hDZ3Z1ZW5ROUNZTlQ1akRwL2pUQ1RXQ1E9PQo=",
-      "sha256": "f00cb63adffb4130ab5f49dc22e143a714096eef0d6c2009ac43d4def925bd68",
-      "size": 12028498
+      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.1.0-beta.1/Duou-Switch_4.1.0-beta.1_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTUF4ZG9mcHYvTnh5a3RWQTNZVzFnYStxYkhRYzhUdy9rb1daNGdoWW5zMlk5ZUZWUExDc2J0dzBwNCsvdDRTUmNVZ0tzejd6SzYwL3pySGJscnZLQlFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzkyOTE4CWZpbGU6RHVvdS1Td2l0Y2hfNC4xLjAtYmV0YS4xX3g2NC1zZXR1cC5leGUKMTZ4ZE9TU25qL2EyakdtS3NBaUZ3ZXBsa1NicUpRRThueERVVGRrVmpIdmNqTlRtT3BFTGMvc01weE04YTBTUXBnZHpiTGVoSm9ZTnZ6SlJqYk02QVE9PQo=",
+      "sha256": "808828562215c22439807542f3ebee2e8bafa65a6fd46e7e07724d42ca28ad3c",
+      "size": 12041495
     }
   }
 }
