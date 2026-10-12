@@ -1,5 +1,5 @@
 {
-  "version": "4.1.0-beta.1",
+  "version": "4.0.0",
   "notes": "# Duou-Switch 4.1.0-beta.1 隔离更新验收\n\n本版本用于 Windows x64 当前用户级 NSIS 的签名更新验收，是版本 A。\n仅用于有 acceptance.json 标记且带 --duou-acceptance-root 参数的受控安装目录，普通启动会拒绝运行。使用独立应用缓存和合成资料，不用于日常配置。\n\n支持从 testing HTTPS 频道检查、下载、验签和安装版本 B；正式 stable 频道尚未批准发布。Duou 4.0.0 首次过渡需要手动覆盖安装。\n\n保留 MIT 许可。公开仓库只提供二进制、签名、哈希和说明，源码继续私有。\n",
   "pub_date": "2026-10-12T08:15:49.960Z",
   "platforms": {
