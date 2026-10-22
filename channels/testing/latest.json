@@ -1,13 +1,13 @@
 {
-  "version": "4.2.0-beta.2",
-  "notes": "# Duou-Switch 4.2.0-beta.2\n\n此安装包仅用于本轮 Windows x64 自动更新的隔离验收，采用独立验收标识；普通用户请继续使用 4.1.0 正式版。验收程序要求受控的独立安装目录与启动标记，不应覆盖日常安装或资料。\n\n本版本作为 B 目标，用于从 A 验证固定 testing 入口的签名更新。验收覆盖检查与安装分离、中文说明与确认、验签失败拒绝、路由与活跃请求门禁、安装前数据库备份，以及重启后的版本和代表性资料保留。未完成的验证不会在本说明中宣称通过。\n\n本轮源码合入上游 4.0.10 至 4.0.12 的兼容性修复，并保留 Duou 的默认仅保存、显式启用及既有登录资料保护。公开资产仅包含安装器、对应签名、更新清单、摘要、许可证与本说明，不包含源码、账户或本地配置。\n\n该预发布不设为 GitHub Latest，也不修改 stable 频道。Windows x64 之外的平台不属于本轮实机更新验收范围。\n",
-  "pub_date": "2026-10-15T06:49:38.272Z",
+  "version": "4.3.0-rc.1",
+  "notes": "# Duou-Switch 4.3.0-rc.1 Windows 候选版\n\n本候选基于 CC Switch v4.0.18，仅提供 Windows x64 当前用户 NSIS。stable 继续为 4.2.0；4.3.0 正式版尚未批准或投放。候选不代表完整安装升级已经验收，请勿用日常资料进行降级测试。\n\n- 接入 Antigravity CLI（agy）的供应商/模型、受控终端、MCP、Skills、提示词、会话和用量。供应商只影响从卡片打开的会话。Windows 暂无多账号授权中心，真实账号推理未验收。\n- 合入设置恢复、官方登录保留/过期处理、MCP 并发写入、Codex 上下文/压缩和工具配对修复，保留默认只保存、显式启用、JSONC 注释与未知字段。\n- 更新 Windows 终端/PATH、路由子进程句柄和托盘面板，保留 Duou 五主题及正常退出清理。\n- 数据库升级至 schema 21；升级前一致性备份。旧 4.2.0 不能直接打开新库，恢复必须使用匹配的旧资料副本。\n\n更新包沿用 Duou 生产公钥验签。NSIS 会参考当前用户注册目录，单独修改 HOME 不能隔离安装；本轮没有用候选覆盖日常安装。详细验证结果与阻塞见源码仓库的 2026-10-22 上游同步报告。\n",
+  "pub_date": "2026-10-22T05:33:02.216Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.2.0-beta.2/Duou-Switch_4.2.0-beta.2_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTU9BZ0NDS3l5cHN1NHpocFhUU05OM2xsYnJwaVhLSWxzV3o2c0VDVVZtWnpyVmxESWpJaVdUcnp4OXUybTFJcG1UV1lHSHZoNm1YVXAzdTQ4U1FMMUFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMDQ2ODc5CWZpbGU6RHVvdS1Td2l0Y2hfNC4yLjAtYmV0YS4yX3g2NC1zZXR1cC5leGUKTFJGcG9yWE9PTXpLTjhSL00xdjdkL1BPcmd0ejd3ZkxGMFNhUit2MXN1emZtemVVMko3eUllL3lOOUpTS3ZvU1V0emJwYUN0Q2gwdWw4NmdiVEN5Q0E9PQo=",
-      "sha256": "e1edda5beee7ad5190d0a4103b01e77b09e59166326e9551a532a1a2350e0387",
-      "size": 12287507
+      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.3.0-rc.1/Duou-Switch_4.3.0-rc.1_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTU1HQW1KWFo0SGRLU2g2Y3ZuWUthYUZ0RzZwYVhwSlVHN2NSUmh3M2UzblVYWXlwMHFSdXJDQ252K1JZSFcyODdITWtLazVKVzFaSXFXYVk1V09TeUFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNjQ2OTQ4CWZpbGU6RHVvdS1Td2l0Y2hfNC4zLjAtcmMuMV94NjQtc2V0dXAuZXhlCnFNbFRNbmNDeVM2VThNWThWb1pTVGV3TEh5ZXdNN3FoMDRhL1lUWEIydGt3Q09nYVl2aXZmRDI1U0Iwam56UWk3K21OdTBKV2ZGRDFwUFh2YnAvdkR3PT0K",
+      "sha256": "c3636f262cdeac4f8774c2e3ee2a50690e3ce46358cd9cf6f488317023a96b37",
+      "size": 12685676
     }
   }
 }
