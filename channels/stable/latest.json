@@ -1,13 +1,13 @@
 {
-  "version": "4.2.0",
-  "notes": "# Duou-Switch 4.2.0\r\n\r\n本次 Windows x64 更新基于 CC Switch 4.0.12 适配，沿用 Duou 的数据目录、签名更新源和使用习惯。\r\n\r\n- 应用管理增加安装位置诊断、指定位置卸载预览和 Node 版本要求提示，改善 Windows 更新重启后的工具识别。\r\n- 深链导入、供应商图标和本地推理服务预设更完整。导入仍默认仅保存，只有主动确认启用才改动客户端配置。\r\n- 改进 Codex 会话与用量统计、未保存编辑保护和 Skills 恢复；修复 Responses 回复完成后继续报流错误的问题。\r\n- 加固更新清单、签名、文件哈希与尺寸检查，网络失败明确提示；测试构建默认不创建托盘图标，减少历史测试条目。\r\n\r\n- 正常退出不再弹出路由依赖提醒，继续执行退出清理和客户端直连恢复；更新安装仍保护运行中的路由与活跃请求。\r\n\r\n升级保留现有方案和配置。安装前请等待正在运行的路由请求结束，按软件提示确认安装并重启。\r\n\r\n4.1.0 用户可在“设置 → 关于 → 检查更新”中安装。4.0.0 及更早版本需要手动覆盖安装一次；请保留现有安装范围和数据目录，无需先卸载。\r\n\r\n本次分发仅包含 Windows x64 当前用户级 NSIS 安装器。macOS、Linux、ARM 和便携版未在本轮构建或验收。\r\n\r\n基于 CC Switch，遵守 MIT 许可并保留原作者版权。Duou 的更新渠道、签名和产品身份独立维护。\r\n",
-  "pub_date": "2026-10-15T08:17:17.343Z",
+  "version": "4.3.0",
+  "notes": "# Duou-Switch 4.3.0 Windows 正式版\n\n本版基于 CC Switch v4.0.18，仅提供 Windows x64 当前用户级（currentUser）NSIS，沿用原生产 minisign 密钥、公钥和 Duou 更新源。本轮不更新 macOS/Linux。\n\n- 新增 Antigravity CLI（`agy`）供应商、模型、受控终端、MCP、Skills、提示词、会话和用量。供应商只影响从卡片打开的会话；Windows 不提供上游仅 macOS 可用的多账号授权中心。真实账号、API 推理、余额及真实 MCP 握手尚未验收。\n- 合入 CC Switch v4.0.12 → v4.0.18 完整稳定修复链，包括设置恢复、登录过期处理、MCP 并发写入、Codex 上下文与压缩、工具配对、Windows 终端/PATH 和托盘改进。\n- 保留默认只保存、显式启用、官方登录保护、JSONC 注释与未知字段、Duou 五主题及正常退出清理。\n- 数据库 schema 20 → 21，迁移前先做一致性备份。旧 4.2.0 不能直接读取新库；恢复须停止应用与客户端任务，使用匹配的旧程序及旧资料副本，在独立目录操作，不覆盖当前凭据。\n\n隔离 NSIS 安装、实际迁移及原版 4.2.0 → 4.3.0 完整产品 UI 升级尚未验收；代码、构建和签名检查不能代替这些实测。NSIS 会采用当前 Windows 用户的注册安装目录，仅修改 HOME 不能隔离安装。本轮未覆盖日常安装。\n",
+  "pub_date": "2026-10-22T06:23:21.188Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.2.0/Duou-Switch_4.2.0_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTUpSd2xRb0loR2NRYllVZTNCR3BOVitVTUd1YjV2S2FVTWxzakxVaWM0Z01PTU5CelVMVm82QkJoQjlGNlRRNXlKU3FieEY5STFqZVc0T3pVTFRDZEFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMDUyMDg0CWZpbGU6RHVvdS1Td2l0Y2hfNC4yLjBfeDY0LXNldHVwLmV4ZQpyTy9RalFRVThqenJESTZMUWtWM1ZBRFJYeEkyY0xCSFJMUU9Sa0dkSTVVWHFnWEF4cytqM2ZSMXVUMmI4Qy9VYVhZa0pXYk1RUEg5T0x5ajZTWG5Edz09Cg==",
-      "sha256": "ffaefc7903a844b825756be6fe8e3a38debcfc27ccba8414e6db3d9691b10101",
-      "size": 12263445
+      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.3.0/Duou-Switch_4.3.0_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTUU4NWtET1czWUY4M3RydEcrdlNHYmdaWXNIc0JOZXBUd0tTQWxJUWJFb0lRNjZFUmlraTRSb2taWWtBVWlVQUpMOUlaVzBPbHpsY2Z1c29iQ2xmd3c0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNjUwMDQ4CWZpbGU6RHVvdS1Td2l0Y2hfNC4zLjBfeDY0LXNldHVwLmV4ZQpKMVdjK211WnIzNUo5OE5MZENXTGkrK2dXOEtaRXhIcjFJUzNhQ0pPT3VhY2NKY0VuSnVyYk56Q1Yxb29HTTBDMEplKzFwOEM5Q2luUDIyWDdvZ1dCUT09Cg==",
+      "sha256": "bb8c1a70ce62f4ffd838385de381550b4d4180f1aa8841bcd45f2fa459d85a11",
+      "size": 12673909
     }
   }
 }
