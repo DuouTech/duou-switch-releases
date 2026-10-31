@@ -1,13 +1,13 @@
 {
-  "version": "4.4.0",
-  "notes": "# Duou-Switch 4.4.0\n\nWindows x64 正式版，使用当前用户级 NSIS 安装，沿用现有 Duou 更新签名。\n\n- 选择性接入 CC Switch v4.0.19～v4.0.21 的兼容修复。Codex 按 TOML 中选中的供应商发送请求，配置无效时明确报错，避免误用其他地址。\n- 新增 Claude 官方账号管理、卡片绑定、套餐/用量显示和独立终端。通过官方 CLI 登录，各账号使用独立配置目录；默认 Claude 登录切换保持禁用，切换卡片不会替换默认登录。\n- 修复 ChatGPT 账号临时刷新失败被误判失效、Codex MCP 字段兼容、工具协议压缩哈希、图片与工具结果媒体、加密推理和 Azure 历史恢复问题。\n- 改进轻量模式记忆、Codex 模型排序、Skills 下载诊断、Gemini 环境变量导入及 Windows/npm 工具兼容。\n- 保留鹈鹕算力、先保存再显式启用、五套主题、生产身份和原有更新源；数据库 schema 仍为 21。\n\n升级前结束本地路由任务并关闭路由，再在设置中检查和安装更新。Claude 官方账号需要在独立目录完成授权；该目录的会话与历史不会自动迁移到默认 Claude 目录。缺少本地凭证时须重新授权。\n\n本次代码已完成相关本地回归与隔离启动验证。真实 Claude 官方账号登录/实时用量、首次安装、同路径升级和完整自动更新安装尚未实测。GitHub Actions 因账户付款/额度限制未能启动，使用本地验证证据交付。\n",
-  "pub_date": "2026-10-27T15:27:30.473Z",
+  "version": "4.5.0",
+  "notes": "# Duou-Switch 4.5.0\n\nWindows x64 正式版，沿用现有应用身份、生产更新公钥和 stable 更新地址。\n\n- 词元小票采用宋体、方形小 Logo 和粗细实线分隔。总 Token 居中，下面依次显示预估费用、日期、Agent 明细和 Token 分类；减少重复标题和装饰信息。\n- 主按钮「复制图片」直接复制完整 3 倍分辨率小票，无需选择路径。「保存 PNG」保留为可选操作；打印、拖动撕票和跳过动画均可使用。\n- 选择性集成 CC Switch v4.0.22：新增 DeepSeek Harness 原生配置、会话与用量，完善 Oh My Pi 独立统计和共享目录去重，两者均支持生成小票。\n- 修复路由自循环、Codex TOML 数组表写入、错误日志限长及相关协议兼容问题。保留先保存再显式启用、账号隔离和五套主题。\n\n升级前请结束 Agent 路由任务并关闭本地路由，然后在「设置 → 关于」确认更新。数据库由 Schema 21 顺序升级至 24，升级前自动备份；回退旧版须恢复升级前的完整资料，不能直接降低数据库版本号。\n\n小票费用为 API 等价估算，非实际扣费或发票。真实官方账号登录、付费模型调用及其他操作系统不属于本次 Windows 合成资料验收范围。\n",
+  "pub_date": "2026-10-31T16:24:06.269Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.4.0/Duou-Switch_4.4.0_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTUU1cDI5RlQ0UmFseWdIOUlHNzAvTURWcDhzKzJIb0w0R09FVy9iemZBem95SFIzNG1Vakd4aXA5ak9CYUFRN1ovWjhxYlRUTkZWQi96ZEgxOElnblFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMTE0NzcxCWZpbGU6RHVvdS1Td2l0Y2hfNC40LjBfeDY0LXNldHVwLmV4ZQowUFpQZ21SY2dOMmtMSk1STXgzMG50VXRSb3Y4RWpoVGZqayt6Tmh2enNSWFJxMzNZVXk5K0dzUVpLRWM4STBvaVNUTExKN3hEWjBjMnArUDBkeDlCZz09Cg==",
-      "sha256": "b775d0951d95dc044c45228c78a280aca409a42fcd120ef56be75b18a00f0605",
-      "size": 12819742
+      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.5.0/Duou-Switch_4.5.0_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTUZvTjVWbXJwQjhQTFE0RlhmRS9sSHUzbElPV2FRM0g0MmpJZEFQVkRjTjN4RVZZSkdDNGxhS0gxcWFPb3lFaFBzOUVUR0E2N2pGSFFrRjhmQnZ4L0E0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNDYzODA5CWZpbGU6RHVvdS1Td2l0Y2hfNC41LjBfeDY0LXNldHVwLmV4ZQpjdXRRMjZVMzNQLzVBbkFWdWJlY3ZtNFpGSE10LzRtZ3Fxb0FjZklGV0dWN05wQiszb3hvemlnWTNPK1h5aExKKzlDL25GRkpwRDZEOTY1YmpoNzZCQT09Cg==",
+      "sha256": "6a3b92be7c6a38bf63089946cd0c42a4d739352118489fdf8344b7e2edf64aee",
+      "size": 13147831
     }
   }
 }
