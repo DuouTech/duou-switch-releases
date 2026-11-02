@@ -1,13 +1,13 @@
 {
-  "version": "4.5.0",
-  "notes": "# Duou-Switch 4.5.0\n\nWindows x64 正式版，沿用现有应用身份、生产更新公钥和 stable 更新地址。\n\n- 词元小票采用宋体、方形小 Logo 和粗细实线分隔。总 Token 居中，下面依次显示预估费用、日期、Agent 明细和 Token 分类；减少重复标题和装饰信息。\n- 主按钮「复制图片」直接复制完整 3 倍分辨率小票，无需选择路径。「保存 PNG」保留为可选操作；打印、拖动撕票和跳过动画均可使用。\n- 选择性集成 CC Switch v4.0.22：新增 DeepSeek Harness 原生配置、会话与用量，完善 Oh My Pi 独立统计和共享目录去重，两者均支持生成小票。\n- 修复路由自循环、Codex TOML 数组表写入、错误日志限长及相关协议兼容问题。保留先保存再显式启用、账号隔离和五套主题。\n\n升级前请结束 Agent 路由任务并关闭本地路由，然后在「设置 → 关于」确认更新。数据库由 Schema 21 顺序升级至 24，升级前自动备份；回退旧版须恢复升级前的完整资料，不能直接降低数据库版本号。\n\n小票费用为 API 等价估算，非实际扣费或发票。真实官方账号登录、付费模型调用及其他操作系统不属于本次 Windows 合成资料验收范围。\n",
-  "pub_date": "2026-10-31T16:24:06.269Z",
+  "version": "4.6.0",
+  "notes": "Duou-Switch 4.6.0 Windows x64 正式版。\r\n\r\n- 同步固定上游 v4.0.24 的已选适配和修复。\r\n- 与 Tihu 使用同一固定核心；保留原应用身份、资料目录、端口、协议和更新签名。\r\n- 加入跨品牌 Agent 所有权、外改检测及显式释放恢复；释放后重启保持外部配置，重新启用由用户决定。\r\n- 核心源码 d0eedcb45b1885542cd945b7ab71509145e99569，保留 MIT 与第三方声明。\r\n",
+  "pub_date": "2026-11-02T11:08:06.145Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.5.0/Duou-Switch_4.5.0_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTUZvTjVWbXJwQjhQTFE0RlhmRS9sSHUzbElPV2FRM0g0MmpJZEFQVkRjTjN4RVZZSkdDNGxhS0gxcWFPb3lFaFBzOUVUR0E2N2pGSFFrRjhmQnZ4L0E0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNDYzODA5CWZpbGU6RHVvdS1Td2l0Y2hfNC41LjBfeDY0LXNldHVwLmV4ZQpjdXRRMjZVMzNQLzVBbkFWdWJlY3ZtNFpGSE10LzRtZ3Fxb0FjZklGV0dWN05wQiszb3hvemlnWTNPK1h5aExKKzlDL25GRkpwRDZEOTY1YmpoNzZCQT09Cg==",
-      "sha256": "6a3b92be7c6a38bf63089946cd0c42a4d739352118489fdf8344b7e2edf64aee",
-      "size": 13147831
+      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.6.0/Duou-Switch_4.6.0_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTUFXeHRJMVRkTEtEN2xJMC9OOVF1bW1OT0JrKzV2VnpKaVl1UW1mSFhIRWhyVFFCNlhENFYvaVR5ZjVVNDNLRHFJa1A5MStTRUozYThWZGdKM25xZ2dnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNjE3NjczCWZpbGU6RHVvdS1Td2l0Y2hfNC42LjBfeDY0LXNldHVwLmV4ZQpKNG1ZczZZUEhSY3NhelVXY3ZVdUN5dk8rV2FBeGVxNW5QYWFaMkFTaUNxNG4xbFRKSUtMREJGUmRDM1NXYmpHNnE4S2owdFRkK3NZWHJudnlhQXBBUT09Cg==",
+      "sha256": "feb617e6892ee05cd3ca7b8823dfbdf362e4c7a61191a411e214f6b14608746d",
+      "size": 14947509
     }
   }
 }
