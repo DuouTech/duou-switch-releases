@@ -1,13 +1,13 @@
 {
-  "version": "4.3.0-rc.1",
-  "notes": "# Duou-Switch 4.3.0-rc.1 Windows 候选版\n\n本候选基于 CC Switch v4.0.18，仅提供 Windows x64 当前用户 NSIS。stable 继续为 4.2.0；4.3.0 正式版尚未批准或投放。候选不代表完整安装升级已经验收，请勿用日常资料进行降级测试。\n\n- 接入 Antigravity CLI（agy）的供应商/模型、受控终端、MCP、Skills、提示词、会话和用量。供应商只影响从卡片打开的会话。Windows 暂无多账号授权中心，真实账号推理未验收。\n- 合入设置恢复、官方登录保留/过期处理、MCP 并发写入、Codex 上下文/压缩和工具配对修复，保留默认只保存、显式启用、JSONC 注释与未知字段。\n- 更新 Windows 终端/PATH、路由子进程句柄和托盘面板，保留 Duou 五主题及正常退出清理。\n- 数据库升级至 schema 21；升级前一致性备份。旧 4.2.0 不能直接打开新库，恢复必须使用匹配的旧资料副本。\n\n更新包沿用 Duou 生产公钥验签。NSIS 会参考当前用户注册目录，单独修改 HOME 不能隔离安装；本轮没有用候选覆盖日常安装。详细验证结果与阻塞见源码仓库的 2026-10-22 上游同步报告。\n",
-  "pub_date": "2026-10-22T05:33:02.216Z",
+  "version": "4.6.0-rc.2",
+  "notes": "# Duou-Switch 4.6.0-rc.2\n\nWindows x64 隔离验收预发布候选，使用独立的 Acceptance 应用身份、协议和端口，并在隔离 HOME 内保留 .duou-switch 资料目录，用于真实 4.5.0 验收副本的更新测试。\n\n- 改善外部修改 Agent 配置后的恢复：可显式解除本应用管理并保留原文件；若仍含本地路由地址，会提示核对并重新配置，不把释放误报为恢复直连。\n- 保留双品牌的配置所有权交接和通用供应商接入。\n- 固定共享核心提交：43c2f449fb6de426bdaeb4ad9149c1f3925cf500。\n\n仅提升 testing 渠道，stable 保持不变。安装包附带 Tauri updater 签名；安装版与真实更新验收结果单独记录。\n",
+  "pub_date": "2026-11-02T06:01:32.256Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.3.0-rc.1/Duou-Switch_4.3.0-rc.1_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTU1HQW1KWFo0SGRLU2g2Y3ZuWUthYUZ0RzZwYVhwSlVHN2NSUmh3M2UzblVYWXlwMHFSdXJDQ252K1JZSFcyODdITWtLazVKVzFaSXFXYVk1V09TeUFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNjQ2OTQ4CWZpbGU6RHVvdS1Td2l0Y2hfNC4zLjAtcmMuMV94NjQtc2V0dXAuZXhlCnFNbFRNbmNDeVM2VThNWThWb1pTVGV3TEh5ZXdNN3FoMDRhL1lUWEIydGt3Q09nYVl2aXZmRDI1U0Iwam56UWk3K21OdTBKV2ZGRDFwUFh2YnAvdkR3PT0K",
-      "sha256": "c3636f262cdeac4f8774c2e3ee2a50690e3ce46358cd9cf6f488317023a96b37",
-      "size": 12685676
+      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.6.0-rc.2/Duou-Switch_4.6.0-rc.2_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTUtwckhlaUg4OVpoYzRCaHl4d0JraUlYbmF0YWVoaVNoL0dZNXdNZzhicC9WZmRGTHV6Q2tzeHIvZ2dnMTY4M1pjUDRubVZudzBxRVBxSnZtWFRNL2dvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNTk5MjMzCWZpbGU6RHVvdS1Td2l0Y2ggQWNjZXB0YW5jZV80LjYuMC1yYy4yX3g2NC1zZXR1cC5leGUKb3ZNVklTbTFyTUIxRFlPVHRJWHR4VFhGTGMyTFNRY0FVeXFBa05YS3FZYTVQNUx6MmxRTjV4STh4Q1BjUGZGUzFCcjN5Qi9qaG93M01iNzdiMDlpQ0E9PQo=",
+      "sha256": "aba88790eb96361c2264e0ceaacd80b9cde9d4f55cac60559aa4ebbc244e9308",
+      "size": 15009424
     }
   }
 }
