@@ -1,13 +1,13 @@
 {
-  "version": "4.6.0-rc.2",
-  "notes": "# Duou-Switch 4.6.0-rc.2\n\nWindows x64 隔离验收预发布候选，使用独立的 Acceptance 应用身份、协议和端口，并在隔离 HOME 内保留 .duou-switch 资料目录，用于真实 4.5.0 验收副本的更新测试。\n\n- 改善外部修改 Agent 配置后的恢复：可显式解除本应用管理并保留原文件；若仍含本地路由地址，会提示核对并重新配置，不把释放误报为恢复直连。\n- 保留双品牌的配置所有权交接和通用供应商接入。\n- 固定共享核心提交：43c2f449fb6de426bdaeb4ad9149c1f3925cf500。\n\n仅提升 testing 渠道，stable 保持不变。安装包附带 Tauri updater 签名；安装版与真实更新验收结果单独记录。\n",
-  "pub_date": "2026-11-02T06:01:32.256Z",
+  "version": "4.6.1",
+  "notes": "# Duou-Switch 4.6.1\n\nWindows x64 当前用户安装版 Patch。\n\n- 移除继承的 CC Switch 赞助预设、促销文案、返佣与推广入口，并增加默认目录防回流检查。官方中立模板、自定义连接和已有保存供应商继续保留。\n- 选择性集成 CC Switch v4.0.25 的 Windows 表单、浏览器来源防护、路由兼容、Codex 并发与模型别名、Pi MCP、Qwen MaaS 等修复；并非全量合并上游。\n- 保留已合并的小票成果及本品牌身份、主题、资料目录、端口、独立更新源和签名信任根。本次不变更数据库 schema。\n\n升级前建议保留自己的资料备份。需要回退时，退出应用后安装保留的 4.6.0；恢复数据库前先退出应用，使用本品牌的一致性备份，勿混用其他品牌资料。\n\n安装包带 Tauri/minisign 更新签名；该签名不等同于 Windows Authenticode 证书签名。\n",
+  "pub_date": "2026-11-05T01:58:47.839Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.6.0-rc.2/Duou-Switch_4.6.0-rc.2_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTUtwckhlaUg4OVpoYzRCaHl4d0JraUlYbmF0YWVoaVNoL0dZNXdNZzhicC9WZmRGTHV6Q2tzeHIvZ2dnMTY4M1pjUDRubVZudzBxRVBxSnZtWFRNL2dvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNTk5MjMzCWZpbGU6RHVvdS1Td2l0Y2ggQWNjZXB0YW5jZV80LjYuMC1yYy4yX3g2NC1zZXR1cC5leGUKb3ZNVklTbTFyTUIxRFlPVHRJWHR4VFhGTGMyTFNRY0FVeXFBa05YS3FZYTVQNUx6MmxRTjV4STh4Q1BjUGZGUzFCcjN5Qi9qaG93M01iNzdiMDlpQ0E9PQo=",
-      "sha256": "aba88790eb96361c2264e0ceaacd80b9cde9d4f55cac60559aa4ebbc244e9308",
-      "size": 15009424
+      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.6.1/Duou-Switch_4.6.1_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTVB5Tzl3ZWh0d054YzhDR01RVktEUUxvZkNBZU5xd210aXZIWlRiVEN3czNMUTlkZHlWa053YngrQ2lJbFV6Nkt1U1pGN241eFNrM0xuZHBzQlBWbmdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzODQzOTAzCWZpbGU6RHVvdS1Td2l0Y2hfNC42LjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjQuNi4xCmt3a015R2pzM1c5dW9jSzJNNFVQUFNuUUhNMlpnZVlvME93d2lOYW1vWHpLMXdGTUo0cHBJZEg1aVFFNzlESDh4YnRkRTBYcWZHU2c3OHJaZEp3YUNBPT0K",
+      "sha256": "93177622331a27c8262dad279abe378505d78adf1a8f3ca5ec21f9296a14319b",
+      "size": 15172064
     }
   }
 }
