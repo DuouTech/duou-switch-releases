@@ -1,13 +1,13 @@
 {
-  "version": "4.6.0",
-  "notes": "Duou-Switch 4.6.0 Windows x64 正式版。\r\n\r\n- 同步固定上游 v4.0.24 的已选适配和修复。\r\n- 与 Tihu 使用同一固定核心；保留原应用身份、资料目录、端口、协议和更新签名。\r\n- 加入跨品牌 Agent 所有权、外改检测及显式释放恢复；释放后重启保持外部配置，重新启用由用户决定。\r\n- 核心源码 d0eedcb45b1885542cd945b7ab71509145e99569，保留 MIT 与第三方声明。\r\n",
-  "pub_date": "2026-11-02T11:08:06.145Z",
+  "version": "4.6.1",
+  "notes": "# Duou-Switch 4.6.1\n\nWindows x64 当前用户安装版 Patch。\n\n- 移除继承的 CC Switch 赞助预设、促销文案、返佣与推广入口，并增加默认目录防回流检查。官方中立模板、自定义连接和已有保存供应商继续保留。\n- 选择性集成 CC Switch v4.0.25 的 Windows 表单、浏览器来源防护、路由兼容、Codex 并发与模型别名、Pi MCP、Qwen MaaS 等修复；并非全量合并上游。\n- 保留已合并的小票成果及本品牌身份、主题、资料目录、端口、独立更新源和签名信任根。本次不变更数据库 schema。\n\n升级前建议保留自己的资料备份。需要回退时，退出应用后安装保留的 4.6.0；恢复数据库前先退出应用，使用本品牌的一致性备份，勿混用其他品牌资料。\n\n安装包带 Tauri/minisign 更新签名；该签名不等同于 Windows Authenticode 证书签名。\n",
+  "pub_date": "2026-11-05T01:58:47.839Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.6.0/Duou-Switch_4.6.0_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTUFXeHRJMVRkTEtEN2xJMC9OOVF1bW1OT0JrKzV2VnpKaVl1UW1mSFhIRWhyVFFCNlhENFYvaVR5ZjVVNDNLRHFJa1A5MStTRUozYThWZGdKM25xZ2dnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNjE3NjczCWZpbGU6RHVvdS1Td2l0Y2hfNC42LjBfeDY0LXNldHVwLmV4ZQpKNG1ZczZZUEhSY3NhelVXY3ZVdUN5dk8rV2FBeGVxNW5QYWFaMkFTaUNxNG4xbFRKSUtMREJGUmRDM1NXYmpHNnE4S2owdFRkK3NZWHJudnlhQXBBUT09Cg==",
-      "sha256": "feb617e6892ee05cd3ca7b8823dfbdf362e4c7a61191a411e214f6b14608746d",
-      "size": 14947509
+      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.6.1/Duou-Switch_4.6.1_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTVB5Tzl3ZWh0d054YzhDR01RVktEUUxvZkNBZU5xd210aXZIWlRiVEN3czNMUTlkZHlWa053YngrQ2lJbFV6Nkt1U1pGN241eFNrM0xuZHBzQlBWbmdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzODQzOTAzCWZpbGU6RHVvdS1Td2l0Y2hfNC42LjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjQuNi4xCmt3a015R2pzM1c5dW9jSzJNNFVQUFNuUUhNMlpnZVlvME93d2lOYW1vWHpLMXdGTUo0cHBJZEg1aVFFNzlESDh4YnRkRTBYcWZHU2c3OHJaZEp3YUNBPT0K",
+      "sha256": "93177622331a27c8262dad279abe378505d78adf1a8f3ca5ec21f9296a14319b",
+      "size": 15172064
     }
   }
 }
