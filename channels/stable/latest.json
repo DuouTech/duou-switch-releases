@@ -1,13 +1,13 @@
 {
-  "version": "4.6.3",
-  "notes": "# Duou-Switch 4.6.3\r\n\r\n已在同一隔离 Windows Server 2025 用户中完成旧正式版升级和真实 Agent 使用后的编辑验证。两款同时运行的双向交接、在途流完整结束、旧程序退出重开及旧格式待恢复事务均通过；本轮交付 Windows x64 当前用户 NSIS。\r\n\r\n- 启用后仍可编辑当前 Agent 配置。以最新文件为底合并受控字段，保留无关字段、注释与格式；真正同字段冲突显示必要差异，取消不改状态，也可保留外部修改。\r\n- 两款保持运行时，在当前软件明确启用即可交接，无需先释放配置锁或退出另一款。原代理保留已有连接；新配置由最后一次明确选择生效。短时跨进程锁、字段比较和交接记录防止旧程序退出、重开或恢复旧事务时回写覆盖；后台操作不能暗中抢回配置。\r\n- 新增独立 Copilot CLI 应用及自带 Key 配置，接入模型、MCP、Skills、提示词、会话、用量与深链；保留独立配置目录和两品牌受控字段合并、并发冲突与交接边界。自带 Key 不依赖 GitHub 登录；真实账号授权的验收状态另行列明。\r\n- 选择性同步 CC Switch v4.0.30：包含此前 4.0.29 的软链接写入、Windows/WSL 模型目录、第三方 Responses 工具回执、Kimi/DeepSeek 工具历史、会话缓存隔离、身份头、32k 输出、官方模型列表与 Claude 额度归属，并适配 4.0.30 的 Copilot 上下文/输入上限、Windows CLI 识别和窗口可见性等相关修复。隐私模式默认关闭。完整范围与排除项见共享核心 docs/UPSTREAM.md；不是全量上游同步。\r\n\r\n保留已有连接、Key、主题、小票、历史用量、无广告目录与品牌快速接入。Windows x64 current-user NSIS，使用本品牌既有独立更新公钥和 stable 地址；更新签名不等同 Windows Authenticode。\r\n\r\n回退基线为 4.6.2。先关闭应用并保留升级后资料，再用升级前一致备份恢复所需数据；不得以旧版恢复覆盖已交给另一品牌的 Agent 文件。实际安装、真实 Agent 和双品牌测试结果及最终源码/安装包 hash 见共享核心 docs/reports/双品牌配置合并与上游4029_2026-11-11.md。\r\n",
-  "pub_date": "2026-11-12T09:53:21.058Z",
+  "version": "4.6.4",
+  "notes": "# Duou-Switch 4.6.4\n\n适用于 Windows x64 当前用户安装版。\n\n- 在“设置 → 关于”可开启自动下载正式更新，默认关闭。切换页面、重新打开设置或刷新窗口后，都能继续查看实际下载进度。下载并验签完成后，由你决定何时安装。\n- 普通安装会等待正在处理的路由请求完成。需要立即重启时，可以选择强制安装并再次确认，正在处理的请求可能中断。安装前会校验更新包并备份数据库和应用设置。\n- “应用”页可以恢复 Claude Code、Codex 等命令行工具的安装和升级状态，避免刷新时再次启动同一命令。\n- 选择性跟进 CC Switch v4.0.36，改善 Codex 官方模型发现、Fable 小版本识别、Gemini 原生模型查询、Copilot 图片能力识别和 Mistral 请求兼容性。Skills 更新写入失败时会保留原目录。\n\n安装包使用 Duou-Switch 的官方更新签名。Windows Authenticode 显示为未签名。版本安装包与固定下载入口提供相同字节，可用 SHA256 核对。\n\n`cf01acaa0d7670f272507a608f0bbcfa9b400c46125f1831a06d24e1a7484918`\n",
+  "pub_date": "2026-11-20T17:54:51.097Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.6.3/Duou-Switch_4.6.3_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTU9oOHBDbXp1cEMyZEZDenN0aENGcmUrTDRrR2Urd2pKaWZhTnJ6QXlaRzdSK0tRNVNOOUIxeEQ5MHNEWU5Ea0VXdmxhUHVWNzM2dlV2SURSVlVQZkFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NDcyNTc2CWZpbGU6RHVvdS1Td2l0Y2hfNC42LjNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjQuNi4zCmtqa1p1eW9zaUM5ZmtMKzRYc1g2Sy9Td2FmYUNNa2xiczlEaGo2Y1hUK05tUXpyQzJKR1JOL0FTZmdrVDNTU2ppTDEvdTVtSm9HWEl4Yit1bE9iRkJ3PT0K",
-      "sha256": "c22c67ae764b654584174c1a7f78064853fc765ee5334921c7aa0c843a530c61",
-      "size": 15423816
+      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.6.4/Duou-Switch_4.6.4_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTUcrOXk0VGp3YlRJN1VDaHFLWlE0S3k1Nk1CWlVMZ0dBa1IyZGlaZkxMektrdkhoSlBEM3NsSWsvM0lYYUd6OUNHMGFVRDhpbnVJd3AzeUNmV25BSFFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTk0MjM5CWZpbGU6RHVvdS1Td2l0Y2hfNC42LjRfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjQuNi40Cm8zc1ZGUmRjWnNSdjVSNUpoU3laeENOVU81bi9YSjB3WmVoRjFOc2xYUmFWZjVKZUZYeitTVVJ0U1hYdjFmNDdaWUd2Z3BEL2Q4SmdlbFhNZVF5OUNRPT0K",
+      "sha256": "cf01acaa0d7670f272507a608f0bbcfa9b400c46125f1831a06d24e1a7484918",
+      "size": 15451734
     }
   }
 }
