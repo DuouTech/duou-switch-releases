@@ -1,13 +1,13 @@
 {
-  "version": "4.6.4",
-  "notes": "# Duou-Switch 4.6.4\n\n适用于 Windows x64 当前用户安装版。\n\n- 在“设置 → 关于”可开启自动下载正式更新，默认关闭。切换页面、重新打开设置或刷新窗口后，都能继续查看实际下载进度。下载并验签完成后，由你决定何时安装。\n- 普通安装会等待正在处理的路由请求完成。需要立即重启时，可以选择强制安装并再次确认，正在处理的请求可能中断。安装前会校验更新包并备份数据库和应用设置。\n- “应用”页可以恢复 Claude Code、Codex 等命令行工具的安装和升级状态，避免刷新时再次启动同一命令。\n- 选择性跟进 CC Switch v4.0.36，改善 Codex 官方模型发现、Fable 小版本识别、Gemini 原生模型查询、Copilot 图片能力识别和 Mistral 请求兼容性。Skills 更新写入失败时会保留原目录。\n\n安装包使用 Duou-Switch 的官方更新签名。Windows Authenticode 显示为未签名。版本安装包与固定下载入口提供相同字节，可用 SHA256 核对。\n\n`cf01acaa0d7670f272507a608f0bbcfa9b400c46125f1831a06d24e1a7484918`\n",
-  "pub_date": "2026-11-20T17:54:51.097Z",
+  "version": "4.6.5",
+  "notes": "# Duou-Switch 4.6.5\n\nWindows x64 安装包修复了 Antigravity 会话中 Gemini 4 Neon 的成本显示。低、中、高、超高档按同一标准 API 价格估算，每百万 Token 输入 3 美元、输出 15 美元、缓存命中 0.15 美元。Gemini 4 Hydrogen 使用独立费率 1.50、7.50、0.075 美元。后台目录同步保留手动定价和已删除模型，明确匹配的历史零成本记录会补算。订阅实际收费以账单为准。[Google 定价](https://aistudio.google.com/docs/pricing#gemini-4-neon)\n\n授权中心新增 Windows Antigravity、Gemini CLI、Kimi Code、WorkBuddy 原生登录入口，以及其他 Agent 的账号和连接设置。可刷新当前托管账号和原生额度，账号详情和额度在窄窗口中分行显示。Antigravity 换号由用户在官方 agy 中完成。\n\n选择性适配 CC Switch v4.0.37，保护损坏的供应商、MCP 和 Claude 配置，修复工具入参、IPv6 监听、故障转移和慢速 Skills 下载。后台可按设置自动下载，安装和强制重启均由用户确认，安装前会验签及备份。\n\n[国内下载](https://cnb.cool/duoutech/duou-switch/-/releases/latest/download/Duou-Switch_x64-setup.exe) · [GitHub 下载](https://github.com/DuouTech/duou-switch-releases/releases/latest/download/Duou-Switch_x64-setup.exe)\n",
+  "pub_date": "2026-11-21T06:45:48.775Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.6.4/Duou-Switch_4.6.4_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTUcrOXk0VGp3YlRJN1VDaHFLWlE0S3k1Nk1CWlVMZ0dBa1IyZGlaZkxMektrdkhoSlBEM3NsSWsvM0lYYUd6OUNHMGFVRDhpbnVJd3AzeUNmV25BSFFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTk0MjM5CWZpbGU6RHVvdS1Td2l0Y2hfNC42LjRfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjQuNi40Cm8zc1ZGUmRjWnNSdjVSNUpoU3laeENOVU81bi9YSjB3WmVoRjFOc2xYUmFWZjVKZUZYeitTVVJ0U1hYdjFmNDdaWUd2Z3BEL2Q4SmdlbFhNZVF5OUNRPT0K",
-      "sha256": "cf01acaa0d7670f272507a608f0bbcfa9b400c46125f1831a06d24e1a7484918",
-      "size": 15451734
+      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.6.5/Duou-Switch_4.6.5_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTVB6YzN6a04rT0lOVFB1cEk2QzZKZC9IZEd6Z2Z6VStxWXdKMVc1ZUNORUMyT1dxaitVMnZpTHl1Qndsdno5c2dDSU1VUHAzN3F1Tmw3cHJhYlNzQkFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjQzNTQ4CWZpbGU6RHVvdS1Td2l0Y2hfNC42LjVfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjQuNi41CklRZUpkYldLTWxHNzNDb1l2MVVCdWR3VmVWc3FjYzZTd204Njd2UGxNVHkrT0ZmUjJnYlNJWTNNUmN6K1BQOENNcWoyTktUd0d3dUFROEhVWFlhNUFnPT0K",
+      "sha256": "566641b47f5f9f3d0d1ffdb72178985c5256d82d72598cb5b05ed2092da79f4b",
+      "size": 15465446
     }
   }
 }
