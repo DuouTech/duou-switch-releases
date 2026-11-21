@@ -1,13 +1,13 @@
 {
-  "version": "4.6.5",
-  "notes": "# Duou-Switch 4.6.5\n\nWindows x64 安装包修复了 Antigravity 会话中 Gemini 4 Neon 的成本显示。低、中、高、超高档按同一标准 API 价格估算，每百万 Token 输入 3 美元、输出 15 美元、缓存命中 0.15 美元。Gemini 4 Hydrogen 使用独立费率 1.50、7.50、0.075 美元。后台目录同步保留手动定价和已删除模型，明确匹配的历史零成本记录会补算。订阅实际收费以账单为准。[Google 定价](https://aistudio.google.com/docs/pricing#gemini-4-neon)\n\n授权中心新增 Windows Antigravity、Gemini CLI、Kimi Code、WorkBuddy 原生登录入口，以及其他 Agent 的账号和连接设置。可刷新当前托管账号和原生额度，账号详情和额度在窄窗口中分行显示。Antigravity 换号由用户在官方 agy 中完成。\n\n选择性适配 CC Switch v4.0.37，保护损坏的供应商、MCP 和 Claude 配置，修复工具入参、IPv6 监听、故障转移和慢速 Skills 下载。后台可按设置自动下载，安装和强制重启均由用户确认，安装前会验签及备份。\n\n[国内下载](https://cnb.cool/duoutech/duou-switch/-/releases/latest/download/Duou-Switch_x64-setup.exe) · [GitHub 下载](https://github.com/DuouTech/duou-switch-releases/releases/latest/download/Duou-Switch_x64-setup.exe)\n",
-  "pub_date": "2026-11-21T06:45:48.775Z",
+  "version": "4.6.6",
+  "notes": "# Duou-Switch 4.6.6\n\n补齐 CC Switch 4.0.38 的 243 条内置定价。本次新增 GPT-6.1 Terra、GPT-6.2 Sol、GPT-6.2 Astra、Kimi K3.1 Pro／HighSpeed 及其 Kimi Code 名称、Qwen4 Max，共 8 条。\n\nAntigravity 用量支持 Hydrogen 的超高档、分档模型和可识别的编排执行模型，以及 Gemini Flash 的分档模型和 Claude Thinking。升级后会补算仍保留且能明确匹配的零成本记录。手动定价、删除项和已有费用保留。用量显示 API 等价估算。[CC Switch v4.0.38](https://github.com/farion1231/cc-switch/releases/tag/v4.0.38) · [Google 定价](https://aistudio.google.com/docs/pricing#gemini-4-hydrogen)\n\n[国内下载](https://cnb.cool/duoutech/duou-switch/-/releases/latest/download/Duou-Switch_x64-setup.exe) · [GitHub 下载](https://github.com/DuouTech/duou-switch-releases/releases/latest/download/Duou-Switch_x64-setup.exe)\n",
+  "pub_date": "2026-11-21T16:12:09.309Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.6.5/Duou-Switch_4.6.5_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTVB6YzN6a04rT0lOVFB1cEk2QzZKZC9IZEd6Z2Z6VStxWXdKMVc1ZUNORUMyT1dxaitVMnZpTHl1Qndsdno5c2dDSU1VUHAzN3F1Tmw3cHJhYlNzQkFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjQzNTQ4CWZpbGU6RHVvdS1Td2l0Y2hfNC42LjVfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjQuNi41CklRZUpkYldLTWxHNzNDb1l2MVVCdWR3VmVWc3FjYzZTd204Njd2UGxNVHkrT0ZmUjJnYlNJWTNNUmN6K1BQOENNcWoyTktUd0d3dUFROEhVWFlhNUFnPT0K",
-      "sha256": "566641b47f5f9f3d0d1ffdb72178985c5256d82d72598cb5b05ed2092da79f4b",
-      "size": 15465446
+      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.6.6/Duou-Switch_4.6.6_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTUNybkhZV0czSDdkTG9QSnJIVXlkOVU2RWtobmt1LzFaU1grN2RzTkwvckNWZDAyUWdMNXFpUkZTNjNjSFFmNXZSbS9aQk1qZVZqbEJSVHBZekhkWVFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Mjc3NTI4CWZpbGU6RHVvdS1Td2l0Y2hfNC42LjZfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjQuNi42ClBpNklqclJGQ1lIMFdDUDRqYWJTWElyUUE1QnBuVVZhR0p6S3hPa1ByQkdNdUY3T2ZXQzdTcnI1MlNtQXp4VUpZVUJPeU1HRmt6N1VYRk45aUxOTUJ3PT0K",
+      "sha256": "36d39e8b6f05f158d9c7ff3e5885322559e3a1a1dc453127314a230fae1ad6e6",
+      "size": 15463120
     }
   }
 }
