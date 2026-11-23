@@ -1,13 +1,13 @@
 {
-  "version": "4.6.6",
-  "notes": "# Duou-Switch 4.6.6\n\n补齐 CC Switch 4.0.38 的 243 条内置定价。本次新增 GPT-6.1 Terra、GPT-6.2 Sol、GPT-6.2 Astra、Kimi K3.1 Pro／HighSpeed 及其 Kimi Code 名称、Qwen4 Max，共 8 条。\n\nAntigravity 用量支持 Hydrogen 的超高档、分档模型和可识别的编排执行模型，以及 Gemini Flash 的分档模型和 Claude Thinking。升级后会补算仍保留且能明确匹配的零成本记录。手动定价、删除项和已有费用保留。用量显示 API 等价估算。[CC Switch v4.0.38](https://github.com/farion1231/cc-switch/releases/tag/v4.0.38) · [Google 定价](https://aistudio.google.com/docs/pricing#gemini-4-hydrogen)\n\n[国内下载](https://cnb.cool/duoutech/duou-switch/-/releases/latest/download/Duou-Switch_x64-setup.exe) · [GitHub 下载](https://github.com/DuouTech/duou-switch-releases/releases/latest/download/Duou-Switch_x64-setup.exe)\n",
-  "pub_date": "2026-11-21T16:12:09.309Z",
+  "version": "4.6.7",
+  "notes": "# Duou-Switch 4.6.7\n\n全面重塑 Duou-Switch 词元小票视觉与交互体验，支持「雾蓝精装」「极客碳黑」「暖白热敏」三套主题自由切换，并记忆上次选择的主题。\n\n采用统一的紧凑卡片排版与 DIN 工业几何数字字体（Bahnschrift），强化总 Token 与预估费用的主次层次；多 Agent 自动展示占比条与 2 列紧凑指标网格，底部精简为条形码与生成时间，出票打印动画与 3 倍高清 PNG 复制／保存同步联动。Tihu-Switch 绿野小票保持不变。\n\n[国内下载](https://cnb.cool/duoutech/duou-switch/-/releases/latest/download/Duou-Switch_x64-setup.exe) · [GitHub 下载](https://github.com/DuouTech/duou-switch-releases/releases/latest/download/Duou-Switch_x64-setup.exe)\n",
+  "pub_date": "2026-11-23T01:54:28.541Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.6.6/Duou-Switch_4.6.6_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTUNybkhZV0czSDdkTG9QSnJIVXlkOVU2RWtobmt1LzFaU1grN2RzTkwvckNWZDAyUWdMNXFpUkZTNjNjSFFmNXZSbS9aQk1qZVZqbEJSVHBZekhkWVFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Mjc3NTI4CWZpbGU6RHVvdS1Td2l0Y2hfNC42LjZfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjQuNi42ClBpNklqclJGQ1lIMFdDUDRqYWJTWElyUUE1QnBuVVZhR0p6S3hPa1ByQkdNdUY3T2ZXQzdTcnI1MlNtQXp4VUpZVUJPeU1HRmt6N1VYRk45aUxOTUJ3PT0K",
-      "sha256": "36d39e8b6f05f158d9c7ff3e5885322559e3a1a1dc453127314a230fae1ad6e6",
-      "size": 15463120
+      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.6.7/Duou-Switch_4.6.7_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTU5pMHhXa2JQRUJFTGpnMjNId1hlU3grMlBId0tiWDEwSG1VVEgxVVNia2w3aDNtemtaVUlOQjdzU2xib0c1aXl2L002TDdSR2Q4eGxOUkVFbFlnUWdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Mzk4NjYxCWZpbGU6RHVvdS1Td2l0Y2hfNC42LjdfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjQuNi43CmxyMGFUVU0xQlhhS0crYlNOZm8zNTI5S0NXOTl6Y0RrM29jaDhtYk1rOE9taWNWMDBaN0hZNmw0S2dmT01NVkRpZVVaUXBWU3NjL1JTQmxpazBWRUNBPT0K",
+      "sha256": "edad139c5dcea76f49a6c150bf9fb826542aabedd5a0be223a99cb514ed9c4a7",
+      "size": 15489111
     }
   }
 }
