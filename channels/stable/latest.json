@@ -1,13 +1,13 @@
 {
-  "version": "4.6.8",
-  "notes": "# Duou-Switch 4.6.8\n\n全面升级授权中心、用量请求日志与词元小票的核心交互体验：\n\n- **授权中心原生体验升级**：Windows 端全面支持直接展示个人账号、实时套餐额度与「+ 添加账号」流程，覆盖 Antigravity、Kimi Code、DeepSeek Harness 与 WorkBuddy，移除旧版原生登录折叠入口，支持凭据管理与一键切换。\n- **Antigravity 精准耗时与日志列自定义**：直接解析 Antigravity 原生毫秒级计时数据，请求日志与详情面板完整展示生成速度（tok/s）与首字响应时间（TTFT），自动回补历史计时，并新增列显示自定义菜单。\n- **词元小票排版精调**：移除缓存命中率与缓存读取旁的「部分覆盖」截断文案，统一金额整数与小数位字号并放大货币符号与关键数字，优化 Agent 占比基线对齐，底部条形码升级为高密度样式。\n\n[国内下载](https://cnb.cool/duoutech/duou-switch/-/releases/latest/download/Duou-Switch_x64-setup.exe) · [GitHub 下载](https://github.com/DuouTech/duou-switch-releases/releases/latest/download/Duou-Switch_x64-setup.exe)\n",
-  "pub_date": "2026-11-23T04:35:08.400Z",
+  "version": "4.6.9",
+  "notes": "# Duou-Switch 4.6.9\n\n重点修复 Gemini / Antigravity 生成速度统计异常，全面升级用量性能、安全防护与多 Agent 日常体验：\n\n- **用量统计修复与增强**：修复 Gemini / Antigravity 请求日志中 `tok/s` 速度虚高的问题；在供应商与模型统计表新增「缓存命中率」列，补齐 Codex 缓存写入统计、模型前缀去重与单趟中位数计算；新增 WorkBuddy 企业无限额度、小米 MiMo 余额/Token Plan、Antigravity T3 Code / 独立 ACP 会话发现，以及 Gemini 会话去重与 Oh My Pi Windows PowerShell 恢复命令。\n- **性能与稳定性提升**：数据库启用 SQLite WAL 模式并增加代理热路径只读缓存，会话用量扫描并发共享游标快照，隐私过滤器切换至 Aho-Corasick 匹配，应用页工具版本探测并发离主线程执行，大幅降低响应延迟。\n- **代理协议与 Agent 兼容修复**：支持 GPT-6.2 Sol/Astra 提示词缓存前缀、Codex 官方模型推理档位覆盖、原生 Responses 并行工具调用重排、Mistral 分段思考解析与同名工具消歧；为流式 SSE 解析和用量收集增加 64 MiB 内存边界；修复 DeepSeek Harness 推理档位键规范化、OpenCode v2 历史会话衔接，以及 Windows 端 Codex Desktop MSIX 内置 CLI 自动回退发现。\n- **授权中心、托盘与交互改进**：授权中心按侧栏应用显示设置自动隐藏对应账号卡；系统托盘在供应商副标题展示已登录官方账号并支持 xAI OAuth 实时额度；API Key 输入框新增一键复制按钮，设置页支持可选备份目录体积上限并自动清理残留 sidecar/临时文件；修复多窗口/低分辨率窗口状态恢复、编辑冲突隔离与 Skills 归档/重链提示。\n- **安全加固**：全面收紧 SQL 导入校验（禁用 Trigger/View、限制体积与超时）、通配监听 Host DNS 重绑定防护、QuickJS 用量脚本 SSRF/内存隔离及 MCP 深链导入校验。\n\n[国内下载](https://cnb.cool/duoutech/duou-switch/-/releases/latest/download/Duou-Switch_x64-setup.exe) · [GitHub 下载](https://github.com/DuouTech/duou-switch-releases/releases/latest/download/Duou-Switch_x64-setup.exe)\n",
+  "pub_date": "2026-11-24T09:26:32.716Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.6.8/Duou-Switch_4.6.8_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTUdaK0tTTStYbHhRVE9sbTQ1NlFEWW03S1VVYjJIaFNKRjlSVk4zbDk0TC9sK0ZLa01aN0VDTkl3S0Z3cEN4dEp1M0RsL0Y5TnFscjFVN2x0eEdoWndJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDA3ODA3CWZpbGU6RHVvdS1Td2l0Y2hfNC42LjhfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjQuNi44CktFMEVSOFZOTFBmS1lOZ2VIVE1DOFRNWTdYV3Vld0R1dHZUamxiSGpBSm8rNkx0WWhBcGlmU3BFV2YvK21WRldjbXRNNG10TEhXWEJQaS9BdFg0dkRBPT0K",
-      "sha256": "7ee773f23caad5d8a55782226a17e57d73b647e4c1122a4fd1cb362738dbfaf2",
-      "size": 15836785
+      "url": "https://github.com/DuouTech/duou-switch-releases/releases/download/v4.6.9/Duou-Switch_4.6.9_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUZlVpM1pvcEVqTU1EVnM0dVpQbUZNRFdRSk54WW16OEpZRlRUSDdZSHU2N2cvNEtCN3FoQUpVOXA4djhTdkUwVkMwTTl0cmI3U2Vwa3o3U01odkVtcTJDMnNpUEFvN1FRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTExMjg1CWZpbGU6RHVvdS1Td2l0Y2hfNC42LjlfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjQuNi45CldMOUZTTHVMVDNPdWdSN3R3bnR3UnU1VklpZ1ZLNWltejREZElMbHNzeXl6a1VQL1hobkRjZ25FdTFBTWltR0pwWDJHNXJQdXVhdzFxZWwzdGVJZEF3PT0K",
+      "sha256": "bbf05058f2e1b0ddfde0f1560ca79c6da873dfa1325c0392a2347be0471ec7ba",
+      "size": 15932718
     }
   }
 }
